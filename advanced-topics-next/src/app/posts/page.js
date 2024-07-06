@@ -6,20 +6,20 @@ import styles from "./posts.module.css";
 const Posts = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    fetch(`https://advanced-topics-next.free.beeceptor.com/api/posts/`)
+    fetch(`https://api.mockfly.dev/mocks/7731432c-1d3d-4332-abfc-bd26820791cd/api/posts`)
       .then((response) => response.json())
       .then((res) => setPosts(res));
   }, []);
 
   const handleDelete = (post) => {
-    fetch(
-      `https://advanced-topics-next.free.beeceptor.com/api/posts/${post.id}`,
-      {
-        method: "DELETE",
-      }
-    )
-      .then((res) =>  res.json())
-      .then((res) => console.log(res));
+    // fetch(
+    //   `https://api.mockfly.dev/mocks/7731432c-1d3d-4332-abfc-bd26820791cd/api/posts`,
+    //   {
+    //     method: "DELETE",
+    //   }
+    // )
+    //   .then((res) =>  res.json())
+    //   .then((res) => console.log(res));
   };
 
   return (

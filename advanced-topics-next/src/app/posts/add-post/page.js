@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./add-post.module.css";
 const AddPosts = () => {
-  const [data, setData] = useState({});
+  const [data, setData] = useState([]);
 
   const handleType = (e) => {
     setData((prevState) => {
@@ -13,7 +13,7 @@ const AddPosts = () => {
 
   const handlePostSubmit = async () => {
     let response = await fetch(
-      "https://advanced-topics-next.free.beeceptor.com/api/posts/",
+      "https://api.mockfly.dev/mocks/7731432c-1d3d-4332-abfc-bd26820791cd/api/posts/",
       {
         method: "POST",
         body: JSON.stringify({
@@ -27,7 +27,7 @@ const AddPosts = () => {
     );
 
     response = await response.json();
-    setData({})
+    setData([])
   };
   return (
     <div>
