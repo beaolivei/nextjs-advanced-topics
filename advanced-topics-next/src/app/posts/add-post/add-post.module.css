@@ -1,0 +1,11 @@
+.title{
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.content{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
