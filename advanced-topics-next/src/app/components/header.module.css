@@ -1,11 +1,12 @@
 .headerWrap{
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     background-color: pink;
     color: white;
     font-weight: bold;
 }
-.linkWrap{
+
+.linkWrapper{
     display: flex;
     gap: 20px;
 }
